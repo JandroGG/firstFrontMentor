@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/myStyles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <div class="cards">
+            <article class="card">
+                <div class="star-container"><img src="images/icon-star.svg" class="star"></div>
+                <h2 class="card-title">How did we do?</h2>
+                <p class="card-text"> Please let us know how we did with your support request. All feedback is appreciated 
+                    to help us improve our offering!</p>
+                <div class="card-puntos">
+                    <div class="puntuacion" id="btn-0">1</div>
+                    <div class="puntuacion" id="btn-1">2</div>
+                    <div class="puntuacion" id="btn-2">3</div>
+                    <div class="puntuacion" id="btn-3">4</div>
+                    <div class="puntuacion" id="btn-4">5</div>
+                </div>
+                <div class="btn-container"><button class="btn-voto">Submit</button></div>
+        </article>
+        </div>
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/JandroGG?tab=repositories" target="_blank">Jandro</a>.
+    </div>
+
+    <template id="thankyou">
+        <article class="thankyou">
+            <div class="thank-img-container"><img src="images/illustration-thank-you.svg" class="thank-img"></div>
+            <p class="thank-resultado">You selected <span class="resultado">puntuacion</span> out of 5</p>
+            <h2 class="thank-card-title">Thank you!</h2>
+            <p class="thank-card-text">We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!</p>
+        </article>
+    </template>
+    
+
+    <script src="myApp.js"></script>
+</body>
+</html>
